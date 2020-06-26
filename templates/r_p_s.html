@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<title>Rock Paper Scissor</title>
+	 <style>
+
+body {
+
+    padding:0px;
+    margin:20px;
+    background:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg") ;
+    background-size:auto;
+    width:100vw;
+    height:100vh;
+    
+   
+}
+
+    .heading { color: #FFFFFF;}
+
+</style>
+</head>
+<body>
+<div  class='heading'>
+<h1  class="heading">Rock, Paper, or Scissors?</h1>
+
+
+<form method="post" action="/select">
+<h2  class="heading">Select Difficulty</h2>
+<input type="radio" name="difficulty" value="1"> Easy
+<input type="radio" name="difficulty" value="2"> Medium
+<input type="radio" name="difficulty" value="3" > Hard
+<input type="submit" value="Select" name="Select" class="btn btn-primary"/>
+</form>
+
+
+<h2  class="heading">Choose Wisely</h2>
+
+<form method="post" action="/Rock">
+<input type="submit" value="Rock" name="Rock" class="btn btn-primary" style="margin:5px;"/>
+</form>
+
+<form method="post" action="/Paper">
+<input type="submit" value="Paper" name="Paper" class="btn btn-primary" style="margin:5px;"/>
+
+</form>
+<form method="post" action="/Scissor">
+<input type="submit" value="Scissor" name="Scissor" class="btn btn-primary" style="margin:5px;"/>
+
+</form>
+
+
+<div id="status"  class="heading">
+  <h1>Status</h1>
+  {{ "You choose",p_choice,"AI choose",ai_choice }}<br>
+         <h4>{{ msg }}</h4>
+
+</div>
+</div>
+</body>
+
+</html>

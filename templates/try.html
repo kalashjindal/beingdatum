@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+    .heading { color: #FFFFFF;}
+    .heading1 { color: #152D58; }
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 670px; /* Should be removed. Only for demonstration */
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 95%;
+    padding: 10px;
+
+  }
+}
+div {
+  padding-top: 5px;
+}
+
+body {
+
+    padding:0px;
+    margin:00px;
+    background:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg") ;
+    background-size:auto;
+    width:100vw;
+    height:100vh;
+    
+   
+}
+
+
+  </style>
+<meta name="viewport" content="width=device-width, initial-scale=1" >
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<meta charset="utf-8" />
+<title>Demo</title>
+
+</head>
+<body>
+
+
+<div class="container">
+  <div class="row">
+    <div class="column" >
+      <div class="id1">
+        <h3 class="heading">Kalash Jindal</h1>
+        <h4 class="heading">Intern Use Case</h2>
+          <ul>
+            <li><h4 class="heading">HR Analytics</h3></li>
+            <p class="heading">As the name suggest, It is a prototype of a tool that can be used for suggesting top 10 jobs according to the skills mentioned or inputted by the user</p>
+            
+            <form method="POST" action="/hr_demo" enctype="multipart/form-data">
+            <input type="submit" value ="Click for Live Demo"  class="btn btn-primary">
+            </form>
+            <br>
+
+
+            <li><h4 class="heading">Rock Paper Scissor</h3></li>
+              <p class="heading"> It's the implementation of famous Rock Paper scissor game, containing 3 difficulty levels and played agaist the computer. So, Please take a break and try your hands on it.</p>
+              <form method="POST" action="/rps_demo" enctype="multipart/form-data">
+            <input type="submit" value ="Click for Live Demo"  class="btn btn-primary">
+            </form>
+            <br>
+            <li><h4 class="heading">Cat Dog Classification</h3></li>
+            <p class="heading">the model for the classificaion is trained using CNN for 13 hrs to give better accuracy and classify cat and dog accurately, you can upload the photos of the cat or dog to check what the photo contains</p>
+             <form method="POST" action="/cdc_demo" enctype="multipart/form-data">
+            <input type="submit" value ="Click for Live Demo"  class="btn btn-primary">
+            </form>
+          </ul>
+        
+      </div>
+    </div>
+    <div class="column" >
+      <div class="id2">
+        <h3 class="heading">Siva Krishnan</h2>
+        <h4 class="heading">Intern Use Case</h2>
+          <ul>
+            <li><h3 class="heading">Time series forcasing</h3></li>
+            <p class="heading1">........</p>
+            <form method="POST" action="/ts_demo" enctype="multipart/form-data">
+            <input type="submit" value ="Click for Live Demo"  class="btn btn-primary">
+            </form>
+          </ul>
+      </div>
+    </div>
+    <div class="column">
+      <div class="id3">
+        <h3 class="heading">Eshaan Chauhan</h2>
+        <h4 class="heading">Intern Use Case</h2>
+          <ul>
+            <li><h3 class="heading">Slack Chatbot</h3></li>
+            <p class="heading">........</p>
+            <form method="POST" action="/chatbot" enctype="multipart/form-data">
+            <input type="submit" value ="Click for Live Demo"  class="btn btn-primary">
+            </form>
+          </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
