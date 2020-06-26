@@ -3,7 +3,8 @@ import cv2
 import tensorflow as tf
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
-
+import nltk
+nltk.data.path.append('./nltk_data/')
 from pyresparser import ResumeParser
 from docx import Document
 from flask import Flask,render_template,redirect,request,session
