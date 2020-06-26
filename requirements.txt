@@ -2,7 +2,7 @@ random2
 Click==7.0
 Flask==1.1.1
 
-opencv-contrib-python 
+opencv-python-headless
 
 numpy 
 
