@@ -4,22 +4,23 @@ Created on Thu Jun  4 22:43:49 2020
 
 @author: kalas
 """
-import nltk
-nltk.download('stopwords')
+from stop_words import get_stop_words
+
+
+stop_words = get_stop_words('english')
 
 import pandas as pd
 import re
 from ftfy import fix_text
-from nltk.corpus import stopwords
+
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
 
 
 
-stopw  = set(stopwords.words('english'))
 
 df =pd.read_csv('job_final.csv') 
-df['test']=df['Job_Description'].apply(lambda x: ' '.join([word for word in str(x).split() if len(word)>2 and word not in (stopw)]))
+df['test']=df['Job_Description'].apply(lambda x: ' '.join([word for word in str(x).split() if len(word)>2 and word not in (stop_words)]))
 
 def data_table(skills):
     org_name_clean = skills   
