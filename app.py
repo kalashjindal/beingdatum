@@ -43,7 +43,7 @@ from hr import data_table
 
 
 app = Flask(__name__)
-app.secret_key = "boomerang"
+app.secret_key = "super secret key"
 
 app.config["IMAGE_UPLOADS"] = "static/img/"
 
