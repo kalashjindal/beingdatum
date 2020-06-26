@@ -20,7 +20,7 @@ sklearn
 pystan
 fbprophet
 
-keras
+keras==2.2.5
 
 warn
 
