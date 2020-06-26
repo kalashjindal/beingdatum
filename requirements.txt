@@ -15,7 +15,7 @@ tensorflow==1.15.2
 matplotlib
 pandas
 ftfy
-
+nltk
 sklearn
 pystan
 fbprophet
