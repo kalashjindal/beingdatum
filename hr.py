@@ -19,7 +19,7 @@ from sklearn.neighbors import NearestNeighbors
 
 
 
-df =pd.read_csv('job_final.csv') 
+df =pd.read_csv('https://github.com/erickeagle/beingdatum/blob/master/jd_final.csv') 
 df['test']=df['Job_Description'].apply(lambda x: ' '.join([word for word in str(x).split() if len(word)>2 and word not in (stop_words)]))
 
 def data_table(skills):
