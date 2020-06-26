@@ -2,9 +2,9 @@ random2
 Click==7.0
 Flask==1.1.1
 
-opencv-contrib-python = "*"
+opencv-contrib-python == "*"
 
-numpy = "*"
+numpy == "*"
 
 gunicorn==19.9.0
 itsdangerous==1.1.0
