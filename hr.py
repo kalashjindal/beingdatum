@@ -4,7 +4,8 @@ Created on Thu Jun  4 22:43:49 2020
 
 @author: kalas
 """
-
+import nltk
+nltk.download('stopwords')
 
 import pandas as pd
 import re
