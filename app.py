@@ -11,7 +11,6 @@ from docx import Document
 from flask import Flask,render_template,redirect,request,session
 from random import randrange
 import os
-from hr import data_table
 
 import warnings
 warnings.filterwarnings('ignore')
@@ -36,6 +35,11 @@ from keras.models import Sequential
 from keras.layers import Dense,LSTM
 from pmdarima import auto_arima
 from statsmodels.tsa.statespace.varmax import VARMAX, VARMAXResults
+
+
+from hr import data_table
+
+
 
 
 app = Flask(__name__)
