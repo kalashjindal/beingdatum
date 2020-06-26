@@ -13,7 +13,8 @@ ftfy
 nltk
 sklearn
 pystan
-fbprohet
+fbprophet
+
 keras
 opencv-python
 
