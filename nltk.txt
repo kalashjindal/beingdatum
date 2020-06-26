@@ -1,6 +1,4 @@
-wordnet
-pros_cons
-reuters
+
 stopwords
 WordNetLemmatizer
 pos_tag
