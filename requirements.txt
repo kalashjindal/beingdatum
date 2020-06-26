@@ -21,7 +21,7 @@ pystan
 fbprophet
 
 keras==2.2.5
-
+Pillow
 warn
 spacy
 en-core-web-sm-abd
