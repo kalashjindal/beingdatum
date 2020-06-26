@@ -1,6 +1,11 @@
 random2
 Click==7.0
 Flask==1.1.1
+
+opencv-contrib-python = "*"
+
+numpy = "*"
+
 gunicorn==19.9.0
 itsdangerous==1.1.0
 Jinja2==2.10.1
@@ -16,10 +21,9 @@ pystan
 fbprophet
 
 keras
-opencv-python
 
 warn
-numpy==1.19.0
+
 python-docx
 pyresparser
 pmdarima
