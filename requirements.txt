@@ -23,5 +23,4 @@ python-docx
 pyresparser
 pmdarima
 statsmodels
-DateTime
-pywin32
+
