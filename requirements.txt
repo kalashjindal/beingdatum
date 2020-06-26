@@ -23,7 +23,8 @@ fbprophet
 keras==2.2.5
 
 warn
-
+spacy
+en-core-web-sm-abd
 python-docx
 pyresparser
 pmdarima
