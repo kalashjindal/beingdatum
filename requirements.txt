@@ -6,21 +6,25 @@ itsdangerous==1.1.0
 Jinja2==2.10.1
 MarkupSafe==1.1.1
 Werkzeug==0.15.6
-tensorflow==1.15.2
+tensorflow==1.14
 matplotlib
 pandas
 ftfy
 nltk
 sklearn
 pystan
-fbprophet
+fbprohet
 keras
 opencv-python
 
 warn
-numpy
+numpy==1.19.0
 python-docx
 pyresparser
 pmdarima
 statsmodels
+setuptools>=41.0.0
+srsly<1.10
+cython<0.29.18
+
 
