@@ -16,7 +16,7 @@ pystan
 fbprophet
 keras
 opencv-python
-os-sys
+
 warn
 numpy
 python-docx
@@ -24,4 +24,4 @@ pyresparser
 pmdarima
 statsmodels
 DateTime
-
+pywin32
