@@ -17,7 +17,7 @@ warnings.filterwarnings('ignore')
 
 
 
-df =pd.read_csv('./jd_final.csv') 
+df =pd.read_csv('static/jd_final.csv') 
 df['test']=df['Job_Description'].apply(lambda x: ' '.join([word for word in str(x).split() if len(word)>2 and word not in (stop_words)]))
 
 app = Flask(__name__)
@@ -95,7 +95,7 @@ def submit_data():
         matches = pd.DataFrame(matches, columns=['Match confidence'])
         df['match']=matches['Match confidence']
         df1=df.sort_values('match')
-        df2=df1[['Position', 'Company','Location']].head(10).reset_index()
+        df2=df1[['Position', 'Company','Location','url']].head(10).reset_index()
         
         
         
