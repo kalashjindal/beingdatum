@@ -2,6 +2,9 @@ random2
 Click==7.0
 Flask==1.1.1
 numpy 
+
+warn
+ftfy
 stop-words
 gunicorn==19.9.0
 itsdangerous==1.1.0
@@ -11,8 +14,6 @@ Werkzeug==0.15.6
 pandas
 matplotlib
 
-warn
-ftfy
 nltk
 sklearn
 spacy
