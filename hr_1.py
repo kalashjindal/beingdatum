@@ -17,7 +17,7 @@ warnings.filterwarnings('ignore')
 
 
 
-df =pd.read_csv('static/jd_final.csv') 
+df =pd.read_csv('https://github.com/erickeagle/beingdatum/blob/master/static/jd_final.csv') 
 df['test']=df['Job_Description'].apply(lambda x: ' '.join([word for word in str(x).split() if len(word)>2 and word not in (stop_words)]))
 
 app = Flask(__name__)
