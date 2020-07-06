@@ -1,19 +1,24 @@
-from pyresparser import ResumeParser
-from docx import Document
+
 from flask import Flask,render_template,redirect,request
 import pandas as pd
 import re
+import nltk
+nltk.data.path.append('./nltk_data/')
+nltk.download('stopwords')
+from stop_words import get_stop_words
+stop_words = get_stop_words('english')
 from ftfy import fix_text
-from nltk.corpus import stopwords
+from pyresparser import ResumeParser
+from docx import Document
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
+import warnings
+warnings.filterwarnings('ignore')
 
 
 
-stopw  = set(stopwords.words('english'))
-
-df =pd.read_csv('job_final.csv') 
-df['test']=df['Job_Description'].apply(lambda x: ' '.join([word for word in str(x).split() if len(word)>2 and word not in (stopw)]))
+df =pd.read_csv('./jd_final.csv') 
+df['test']=df['Job_Description'].apply(lambda x: ' '.join([word for word in str(x).split() if len(word)>2 and word not in (stop_words)]))
 
 app = Flask(__name__)
 
