@@ -3,8 +3,7 @@ Click==7.0
 Flask==1.1.1
 numpy 
 
-warn
-ftfy
+
 stop-words
 gunicorn==19.9.0
 itsdangerous==1.1.0
@@ -24,3 +23,5 @@ setuptools>=41.0.0
 srsly<1.10
 cython<0.29.18
 Pillow
+warn
+ftfy
