@@ -10,12 +10,11 @@ MarkupSafe==1.1.1
 Werkzeug==0.15.6
 pandas
 matplotlib
-Pillow
+
 warn
 ftfy
 nltk
 sklearn
-
 spacy
 en-core-web-sm-abd
 python-docx
@@ -23,5 +22,4 @@ pyresparser
 setuptools>=41.0.0
 srsly<1.10
 cython<0.29.18
-
-
+Pillow
